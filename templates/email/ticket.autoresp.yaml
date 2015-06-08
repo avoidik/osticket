@@ -1,0 +1,31 @@
+#
+# Email template: ticket.autoresp.yaml
+#
+# Sent to a user when a new ticket is created
+#
+---
+notes: |
+    Отправляется пользователю тогда, когда создается новая заявка
+
+subject: |
+    Открыта заявка на поддержку [#%{ticket.number}]
+body: |
+    <h3><strong>Уважаемый, %{recipient.name.first}!</strong></h3>
+    <p>
+    Была создана заявка на поддержку под номером #%{ticket.number}.
+    Представитель свяжеться с вами как можно скорее. Вы можете
+    <a href="%{recipient.ticket_link}">посмотреть прогресс заявки
+    онлайн</a>.
+    </p>
+    <br>
+    <div style="color: rgb(127, 127, 127)">
+    Ваша команда %{company.name},
+    <br>
+    %{signature}
+    </div>
+    <hr>
+    <div style="color: rgb(127, 127, 127); font-size: small; "><em>Если вы хотите
+    предоставить дополнительный комментарий или информацию по проблеме, пожалуйста,
+    ответьте на это письмо или <a href="%{recipient.ticket_link}"><span
+    style="color: rgb(84, 141, 212);" >войдите в вашу учетную запись</span></a> для получения
+    полного архива по вашим заявкам на поддержку.</em></div>

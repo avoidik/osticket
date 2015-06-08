@@ -1,0 +1,91 @@
+#
+# Help popup items for the installer
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+helpdesk_name:
+    title: Название системы
+    content: |
+        <p>Название вашей системы обработки заявок, например, Поддержка [название компании]</p>
+
+system_email:
+    title: Email системы по умолчанию
+    content: |
+        <p>Адрес электронной почты по умолчанию, например, support@yourcompany.com - вы сможете добавить другие адреса позже!</p>
+
+default_lang:
+    title: Язык системы по умолчанию
+    content: |
+        <p>Исходные данные для этого языка будут установлены в базу
+        данных. Например, для этого языка будут установлены шаблоны писем
+        и страниц.</p>
+    links:
+      - title: Языковые пакеты osTicket
+        href: http://osticket.com/download?product=langs
+
+first_name:
+    title: Имя
+    content: |
+        <p>Имя администратора</p>
+
+last_name:
+    title: Фамилия
+    content: |
+        <p>Фамилия администратора</p>
+
+email:
+    title: Адрес email
+    content: |
+        <p>Адрес личной электронной почты администратора. Должен отличаться от стандартного адреса
+        электронной почты системы.</p>
+
+username:
+    title: Имя пользователя
+    content: |
+        <p>Логин администратора. Должен быть не менее трех (3) символов.</p>
+
+password:
+    title: Пароль
+    content: |
+        <p>Пароль администратора.  Должен быть пять (5) символов или более.</p>
+
+password2:
+    title: Пароль повторно
+    content: |
+        <p>Повторите ввод пароля администратора. Они должны совпадать.</p>
+
+db_prefix:
+    title: Префикс таблиц MySQL
+    content: |
+        <p>Для osTicket необходим префикс таблиц, чтобы избежать возможных конфликтов в общей базе данных.</p>
+
+db_host:
+    title: Имя хоста MySQL
+    content: |
+        <p>
+        На большинстве серверов используется localhost для локальной базы данных. Уточните у вашего системного администратора, если localhost не работает
+        </p>
+        <p>
+        Порт по умолчанию берется из php.ini. Нестандартный порт можно указать как <code>hostname:port</code>
+        </p>
+
+db_schema:
+    title: База данных MySQL
+    content: |
+        <p>Имя базы данных, которая будет использоваться для osTicket.</p>
+
+db_user:
+    title: Имя пользователя MySQL
+    content: |
+        <p>Пользователь MySQL должен иметь полные права на базу данных.</p>
+
+db_password:
+    title: Пароль MySQL
+    content: |
+        <p>Пароль MySQL для указанного пользователя.</p>

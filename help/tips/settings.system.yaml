@@ -1,0 +1,87 @@
+#
+# This is popup help messages for the Admin Panel -> Settings -> System
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+helpdesk_status:
+    title: Состояние системы заявок
+    content: >
+        Если состояние изменено на <span
+        class="doc-desc-opt">Обслуживание</span>, то клиентская часть интерфейса будет
+        отключена. Это не отключает возможность входа для сотрудников системы.
+
+helpdesk_url:
+    title: URL системы заявок
+    content: >
+        Этот URL является основным для этого экземпляра osTicket. Он используется в
+        переписке по email для указания пользователям ссылок на систему.
+
+helpdesk_name_title:
+    title: Название системы заявок
+    content: >
+        Это название отображается в заголовке браузера. Если ссылка на систему заявок находится в избранном,
+        то это название будет отображаться в качестве названия закладки.
+
+default_department:
+    title: Отдел по умолчанию
+    content: >
+        Укажите <span class="doc-desc-title">отдел</span> по умолчанию
+        для заявок, которые не были автоматически направлены в соответствующий отдел.
+        <br/><br/>
+        Конечная цель заявки может быть определена на основе раздела помощи, входящего адреса email и настроек
+        фильтра заявок.
+
+default_page_size:
+    title: Размер страницы по умолчанию
+    content: >
+        Укажите количество элементов на странице для очередей заявок в панели сотрудников.
+        Каждый сотрудник может изменить это значение в настройках учетной записи, в меню
+        <span class="doc-desc-title">Мои настройки</span>.
+
+default_log_level:
+    title: Степень подробности журналов
+    content: >
+        Определяет минимальный уровень записываемых в
+        <span class="doc-desc-title">системный журнал</span> событий. <span
+        class="doc-desc-opt">Отладка</span> представляет наибольшее количество подробностей и <span
+        class="doc-desc-opt">Ошибка</span> - наименьшее.
+        Например, если вы хотите увидеть все проблемы в <span
+        class="doc-desc-title">Системном журнале</span>, то укажите вариант <span
+        class="doc-desc-opt">Отладка</span>.
+
+purge_logs:
+    title: Очистка журнала
+    content: >
+        Определяет срок хранения записей в
+        class="doc-desc-title">Системном журнале</span> до его очистки.
+
+default_name_formatting:
+    title: Формат имен по умолчанию
+    content: >
+        Выберите формат имен в системе. Шаблоны электронных писем
+        будут использовать это форматирование, если другой формат не задан через переменные.
+
+    links:
+      - title: Доступные переменные в шаблонах электронных писем
+        href: http://osticket.com/wiki/Email_templates
+
+# Date and time options
+date_time_options:
+    title: Настройки даты и времени
+    content: >
+        Следующие настройки определяют дату и время для клиентов.
+        Вы можете использовать форматирование даты и времени PHP.
+        Даты показанные ниже приведены для иллюстрации переменных и значений.
+    links:
+      - title: Перейти на страницу форматов дат и времени для PHP
+        href: http://www.php.net/manual/en/function.date.php

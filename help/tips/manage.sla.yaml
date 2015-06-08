@@ -1,0 +1,35 @@
+#
+# This is popup help messages for the Admin Panel -> Manage -> SLA Plan
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+name:
+    title: Название
+    content: >
+        Укажите краткое название этого <span class="doc-desc-title">плана SLA</span>, которое отразит
+        его предназначение.
+
+grace_period:
+    title: Льготный период
+    content: >
+        Определяет количество часов после создания заявки, которое должно пройти прежде чем
+        заявка будет помечена как просроченная.
+        <br><br>
+        <em>Часы отсчитываются от времени создания заявки.</em>
+
+transient:
+    title: Переходящий
+    content: >
+        Переходящие SLA планы считаются временными и могут быть переопределены не
+        переходящими SLA при перемещении между <span class="doc-desc-opt">Отделами</span>
+        или при смене <span class="doc-desc-title">Раздела помощи</span>.

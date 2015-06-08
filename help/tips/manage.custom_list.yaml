@@ -1,0 +1,50 @@
+#
+# This is popup help messages for the Admin Panel -> Manage -> Add New Custom List
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+custom_lists:
+    title: Настраиваемые списки
+    content: >
+        <span class="doc-desc-title">Настраиваемые списки</span> позволяют создать выпадающие списки с определенными настройками, которые пользователь
+        может выбрать в <span class="doc-desc-title">Пользовательских формах</span>. Если вы хотите использовать <span class="doc-desc-title">Настраиваемый
+        список</span> как <span class="doc-desc-title">цель</span> в <span class="doc-desc-title">Фильтре заявок</span>, то вам нужно убедиться, что этот
+        список добавлен на форму <span class="doc-desc-title">Подробности заявки</span>.
+
+name:
+    title: Название
+    content: >
+
+plural_name:
+    title: Множественное число
+    content: >
+
+sort_order:
+    title: Порядок сортировки
+    content: >
+
+list_s_initial_items:
+    title: Начальные значения списка
+    content: >
+
+value:
+    title: Значение
+    content: >
+
+extra:
+    title: Дополнительно
+    content: >
+        Аббревиатуры и сокращения. Если вы используете внутренние коды для элементов списка, то эти сокращения
+        указываются в этом столбце. Если пользовательский список имеет <span class="doc-desc-option">
+        Предсказуемый ввод</span>, то эти сокращения могут использоваться для поиска пользовательских элементов
+        списка.

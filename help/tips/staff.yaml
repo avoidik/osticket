@@ -1,0 +1,34 @@
+#
+# This is popup help messages for the Admin Panel -> Staff
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+signature:
+    title: Подпись штатных сотрудников
+    content: |
+        Создание подписи в ответах на заявки для штатных сотрудников. Эта подпись
+        будет отображаться под ответом на заявку, по желанию
+
+type:
+    title: Тип учетной записи
+    content: |
+        Администраторы имеют привилегии доступа к панели администратора. Штатные сотрудники
+        имеют права на управление заявками и базой знаний
+
+group:
+    title: Назначенная группа
+    content: |
+        Участие в группе определяет роль штатного сотрудника в системе. Перейдите на
+        страницу управления группами для определения уровня доступа к системе заявок
+
+notes:
+    title: Внутренние заметки
+    content: |
+        Внутренние заметки относительно штатных сотрудников; заметки видны только
+        для учетных записей с типом Администратор

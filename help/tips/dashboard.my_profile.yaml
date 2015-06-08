@@ -1,0 +1,86 @@
+#
+# This is popup help messages for the Staff Panel -> Dashboard -> My Profile
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+contact_information:
+    title: Контактная информация
+    content: >
+
+username:
+    title: Имя пользователя
+    content: >
+        Только сотрудники с правами администратора могут изменить имя пользователя. Если вы сотрудник
+        с правами администратора, то вы можете сделать это в таблице <span class="doc-desc-title">Сотрудники</span>.
+    links:
+      - title: Изменить имя пользователя как администратор
+        href: /scp/staff.php
+
+time_zone:
+    title: Часовой пояс
+    content: >
+
+daylight_saving:
+    title: Летнее время
+    content: >
+
+maximum_page_size:
+    title: Максимальный размер страницы
+    content: >
+
+auto_refresh_rate:
+    title: Частота автоматического обновления
+    content: >
+
+default_signature:
+    title: Подпись по умолчанию
+    content: >
+
+default_paper_size:
+    title: Размер бумаги по умолчанию
+    content: >
+
+show_assigned_tickets:
+    title: Показать назначенные заявки
+    content: >
+        Включите этот параметр для того, чтобы скрыть ваше имя из очереди <span class="doc-desc-title">Открытых
+        заявок</span>, на которые вы назначены исполнителем. Вместо вашего имени будет отображаться название 
+        <span class="doc-desc-title">Отдела</span>, членом которого вы являетесь.
+
+password:
+    title: Пароль
+    content: >
+
+current_password:
+    title: Текущий пароль
+    content: >
+
+new_password:
+    title: Новый пароль
+    content: >
+
+confirm_new_password:
+    title: Подтвердите новый пароль
+    content: >
+
+signature:
+    title: Подпись
+    content: >
+        Создание необязательной <span class="doc-desc-title">Подписи</span>,
+        которая будет отображаться под ответами на заявки. Отображение этой
+        <span class="doc-desc-title">Подписи</span> зависит от настроек
+        <span class="doc-desc-title">Шаблонов электронной почты</span>, которые
+        используются в ответах на заявки. 
+    links:
+      - title: Создать шаблоны электронной почты в панели управления администратора
+        href: /scp/templates.php

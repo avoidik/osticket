@@ -1,0 +1,132 @@
+#
+# This is popup help messages for the Admin Panel -> Emails -> Add New Email
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+new_ticket_help_topic:
+    title: Раздел помощи новой заявки
+    content: >
+        Выберите <span class="doc-desc-title">Раздел помощи</span>, который будет
+        автоматически назначен при создании заявок с этого адреса электронной почты.
+        <br/><br/>
+        Формы, которые связаны с этим разделом помощи, будут добавлены в заявку,
+        но не будут заполнены данными.
+    links:
+      - title: Управление разделами помощи
+        href: /scp/helptopics.php
+
+new_ticket_priority:
+    title: Приоритет новой заявки
+    content: >
+        Укажите <span class="doc-desc-title">приоритет</span> для новых заявок, полученных с
+        с этого адреса электронной почты.
+
+new_ticket_department:
+    title: Отдел новой заявки
+    content: >
+        Укажите <span class="doc-desc-title">Отдел</span>, которому будут
+        назначены заявки, полученные с этого адреса электронной почты.
+    links:
+      - title: Управление отделами
+        href: /scp/departments.php
+
+auto_response:
+    title: Автоматический ответ на новую заявку
+    content: >
+        Вы можете отключить автоматический ответ для пользователя, при создании заявки
+        с этого адреса электронной почты.
+
+username:
+    title: Имя пользователя
+    content: >
+
+password:
+    title: Пароль
+    content: >
+
+login_information:
+    title: Информация об учетной записи почты
+    content: >
+        <span class="doc-desc-title">Имя пользователя</span> и <span
+        class="doc-desc-title">Пароль</span> требуются как для сбора электронной почты с
+        IMAP / POP почтовых ящиков, так и для отправки по SMTP.
+
+mail_account:
+    title: Получение почты
+    content: >
+        Почта, полученная с почтовых ящиков по IMAP или POP, будет преобразована в
+        заявки в системе.
+    links:
+      - title: Управление сбором почты
+        href: /scp/settings.php?t=emails
+
+host_and_port:
+    title: Удаленный хост
+    content: >
+        Укажите <span class="doc-desc-title">адрес</span> и <span
+        class="doc-desc-title">порт</span> вашего почтового сервера. Эту информацию
+        можно узнать в документации к хостингу или у администратора почтового сервера.
+
+protocol:
+    title: Протокол почтового ящика
+    content: >
+        Укажите протокол, поддерживаемый сервером для этого почтового ящика.
+        Рекомендуется использование IMAP и SSL.
+
+fetch_frequency:
+    title: Частота получения
+    content: >
+        Укажите время в минутах. Как часто система будет обращаться к почтовому ящику.
+        <br/><br/>
+        Этот параметр определяет среднее время задержки отправки автоматических ответов после того,
+        как пользователь отправил email на этот ящик.
+
+emails_per_fetch:
+    title: Писем за заход
+    content: >
+        Укажите количество писем, которое обрабатывается за один раз.
+
+fetched_emails:
+    title: Полученные письма
+    content: >
+        Определяет, что делать с полученными письмами:
+        <br/><br/>
+        <span class="doc-desc-opt"><b>Переместить в папку</b></span>:
+        Это действие переместит письма из папки INBOX в указанную вами
+        папку. Если папка не существует, то будет предпринята попытка ее создать.
+        (<b>Рекомендуется</b>)
+        <hr>
+        <span class="doc-desc-opt"><b>Удалять письма</b></span>: Это действие
+        удалит письма из папки INBOX после обработки.
+        <hr>
+        <span class="doc-desc-opt"><b>Ничего не делать</b></span>: Это действие
+        оставит все письма в папке INBOX. Система будет вести список всех полученных сообщений для того,
+        чтобы не получать их снова. Тем не менее,
+        этот вариант может привести к созданию дублирующихся заявок.
+        (<em>Не рекомендуется</em>)
+
+smtp_settings:
+    title: Настройки SMTP
+    content: >
+        Почта отправляемая из системы заявок может отправляться по SMTP.
+        Установка этого параметра, по возможности, рекомендуется, так как это увеличит
+        вероятность доставки писем и снизит вероятность пометки письма как нежелательное.
+
+header_spoofing:
+    title: Разрешить подмену заголовка
+    content: >
+        Включите этот параметр для того, чтобы разрешить отправку почты через этот почтовый ящик с других адресов, отличных от
+        <span class="doc-desc-title">Адреса email</span> указанного выше.
+        <br/><br/>
+        Этот параметр используется для отправки писем с почтового ящика, который имеет синонимы.
+

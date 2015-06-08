@@ -1,0 +1,21 @@
+#
+# Initial organizations defined for the system.
+#
+# Fields:
+# name - Descriptive name for the organization
+# fields - custom fields
+#
+---
+- name: osTicket
+  fields:
+    address:|
+        420 Desoto Street
+        Alexandria, LA 71301
+    phone: (318) 290-3674
+    website: http://osticket.com
+    notes: >
+        Мы не только разрабатываем программное обеспечение, мы также предоставляем
+        поддержку для osTicket. Позвольте нам быстро реализовать и использовать
+        весь потенциал возможностей и особенностей osTicket. Обратитесь к нам
+        за профессиональной поддержкой или посетите наш веб-сайт для получения
+        документации или поддержки сообщества.

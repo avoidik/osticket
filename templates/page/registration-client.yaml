@@ -1,0 +1,27 @@
+#
+# registration-staff.yaml
+#
+# Confirmation email sent to clients when accounts are created for them by
+# staff or via the client portal. This email serves as an email address
+# verification.
+#
+---
+notes: >
+    Этот шаблон определяет email, отправляемый клиентам, для которых штатные сотрудники создали учетную запись
+    от их имени. Это письмо служит в качестве подтверждения адреса email. Пожалуйста, используйте переменную %{link}
+    где-либо в теле сообщения.
+name: "Добро пожаловать в %{company.name}!"
+body: >
+    <h3><strong>Здравствуйте, %{recipient.name.first}!</strong></h3>
+    <div>
+    Мы создали для вас учетную запись в системе обработки заявок по адресу %{url}.<br />
+    <br />
+    Пожалуйста, перейдите по ссылке ниже для подтверждения вашей учетной записи и получения доступа
+    к вашим заявкам.<br />
+    <br />
+    <a href="%{link}">%{link}</a><br />
+    <br />
+    <em style="font-size: small">Ваша система поддержки
+    <br />
+    %{company.name}</em>
+    </div>

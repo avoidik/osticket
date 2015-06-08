@@ -1,0 +1,59 @@
+#
+# This is popup help messages for the Admin Panel -> Settings -> Autoresponder
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+new_ticket:
+    title: Новая заявка
+    content: >
+        Включите этот параметр для того, чтобы задействовать автоответчик для ответа на заявку пользователя.
+    links:
+      - title: Шаблон автоматического ответа на новую заявку
+        href: /scp/templates.php?default_for=ticket.autoresp
+
+new_ticket_by_staff:
+    title: Новая заявка от сотрудника
+    content: >
+        Уведомление, которое отправляется в случае создания заявки сотрудникам от лица пользователя. <em>Сотрудник
+        может переопределить этот параметр при создании заявки.</em>
+    links:
+      - title: Шаблон уведомления на новую заявку
+        href: /scp/templates.php?default_for=ticket.notice
+
+new_message_for_submitter:
+    title: Подтверждение нового сообщения
+    content: >
+        Уведомление, которое отправляется отправителю при добавлении сообщения к существующей заявке.
+    links:
+      - title: Шаблон подтверждения нового сообщения
+        href: /scp/templates.php?default_for=message.autoresp
+
+new_message_for_participants:
+    title: Уведомление о новом сообщении
+    content: >
+        Рассылка уведомления о новом сообщении всем участникам заявки.
+    links:
+      - title: Шаблон уведомления о новом сообщении
+        href: /scp/templates.php?default_for=ticket.activity.notice
+
+overlimit_notice:
+    title: Уведомление при превышении ограничения
+    content: >
+        Уведомление, которое отсылается пользователю в случае превышения <span
+        class="doc-desc-title">Максимального количества открытых заявок</span>.
+    links:
+      - title: Шаблон уведомления о превышении ограничения
+        href: /scp/templates.php?default_for=ticket.overlimit
+
+      - title: Установить <em>Максимальное количество открытых заявок</em>
+        href: /scp/settings.php?t=tickets

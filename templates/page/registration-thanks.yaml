@@ -1,0 +1,23 @@
+#
+# registration-thanks.yaml
+#
+# Page shown to the user after successfully registring and confirming their
+# account. This page should inform the user that the process is complete and
+# that the user can now submit a ticket or access existing tickets
+#
+---
+notes: >
+    Этот шаблон определяет содержимое, отображаемое клиентам после успешного
+    подтверждения учетной записи. Эта страница должна сообщать пользователю о
+    завершении регистрации и возможности создания и просмотра заявок.
+name: "Ваша учетная запись подтверждена!"
+body: >
+    <div>
+    <strong>Мы благодарим вас за регистрацию учетной записи.</strong><br />
+    <br />
+    Вы подтвердили ваш адрес электронной почты и успешно активировали
+    учетную запись. Теперь вы можете создать новую заявку или управлять уже существующими.<br />
+    <br />
+    <em>Ваша система поддержки</em><br />
+    %{company.name}
+    </div>

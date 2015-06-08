@@ -1,0 +1,21 @@
+#
+# registration-confirm.yaml
+#
+# Template of the page shown to the user after registering for an account.
+# The system will send the user an email with a link they should follow to
+# confirm the account. This page should inform them of the next step in
+# the process.
+#
+---
+notes: >
+    Этот шаблон определяет страницу, отображаемую клиентам после заполнения формы регистрации.
+    В шаблоне должно быть указано, что система отправит письмо с подтверждением и следующие шаги
+    в процессе регистрации.
+name: "Регистрация учетной записи"
+body: >
+    <div><strong>Благодарим вас за регистрацию учетной записи.</strong><br/>
+    <br />
+    Мы только что отправили вам письмо на указанный вами адрес. Пожалуйста, перейдите по
+    ссылке в этом письмо для подтверждения вашей учетной записи и получения доступа к вашим
+    заявкам.
+    </div>

@@ -1,0 +1,52 @@
+#
+# Email template: note.alert.yaml
+#
+# Sent to staff members when a new internal note is appended to a ticket.
+# Internal notes can only be added by staff members.
+#
+---
+notes: |
+    Отправляется штатным сотрудникам тогда, когда возникает внутренняя активность, например,
+    создается заметка или сотрудник отвечает на заявку.
+
+subject: |
+    Уведомление о новой внутренней активности
+body: |
+    <h3><strong>Здравствуйте, %{recipient.name}!</strong></h3>
+    Сотрудник зафиксировал активность над заявкой <a
+    href="%{ticket.staff_link}">#%{ticket.number}</a>
+    <br>
+    <br>
+    <table>
+    <tbody>
+    <tr>
+        <td>
+            <strong>От</strong>:
+        </td>
+        <td>
+            %{note.poster}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <strong>Заголовок</strong>:
+        </td>
+        <td>
+            %{note.title}
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    <br>
+    %{note.message}
+    <br>
+    <br>
+    <hr>
+    Для просмотра/ответа на заявку, пожалуйста, <a
+    href="%{ticket.staff_link}">войдите</a> в систему заявок
+    <br>
+    <br>
+    <em style="font-size: small; ">Ваша система поддержки</em>
+    <br>
+    <img src="cid:b56944cb4722cc5cda9d1e23a3ea7fbc"
+    alt="Работает на osTicket" width="126" height="19" style="width: 126px;">

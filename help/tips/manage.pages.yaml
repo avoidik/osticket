@@ -1,0 +1,35 @@
+#
+# This is popup help messages for the Admin Panel -> Manage -> Pages
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+site_pages:
+    title: Страницы сайта
+    content: >
+        Страницы сайта служат в качестве мини-системы управления контентом (CMS). Вы можете создать
+        несколько главных страниц, страницу обслуживания и благодарности, и задать их использование в
+        настройках организации и разделах помощи.
+    links:
+      - title: Настройки организации
+        href: /scp/settings.php?t=pages
+
+type:
+    title: Состояние
+    content: >
+        Страницы <span class="doc-desc-opt">На обслуживании</span> показываются
+        в клиентской части если система отключена. <span
+        class="doc-desc-opt">Главные</span> страницы показываются в качестве
+        главной страницы портала. Страницы <span class="doc-desc-opt">благодарности</span>
+        показываются после размещения заявки. <span
+        class="doc-desc-opt">Прочие</span> страницы могут использоваться в качестве простой
+        системы управления контентом (CMS).

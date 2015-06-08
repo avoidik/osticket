@@ -1,0 +1,12 @@
+#
+# banner-client.yaml
+#
+# This forms the header on the staff login page. It can be useful to inform
+# your clients about your login and registration policies.
+---
+notes: >
+    Этот шаблон определяет заголовок страницы входа клиентов. Здесь можно информировать
+    клиентов о правилах входа и регистрации.
+name: "Войти в %{company.name}"
+body: >
+    Для получения качественной услуги мы настоятельно рекомендуем нашим клиентам зарегистрировать учетную запись.

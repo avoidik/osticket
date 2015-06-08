@@ -1,0 +1,130 @@
+#
+# This is popup help messages for the Admin Panel -> Settings -> Emails
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+default_email_templates:
+    title: Набор шаблонов электронной почты по умолчанию
+    content: >
+        Выберите <span class="doc-desc-title">Набор шаблонов</span>, используемый для отправки <span
+        class="doc-desc-title">Авто-ответов</span> и <span class="doc-desc-title">Оповещений</span> для различных действий в процессе
+        жизненного цикла заявки.
+        <br><br>
+        Отделы могут использовать собственные наборы шаблонов.
+    links:
+      - title: Управление наборами шаблонов
+        href: /scp/templates.php
+
+default_system_email:
+    title: Исходящий адрес email по умолчанию
+    content: >
+        Укажите адрес электронной почты от которого будет отправляться письма.
+        <br><br>
+        <span class="doc-desc-title">Отделы</span> могут установить собственный <span
+        class="doc-desc-title">email адрес</span>, который будет использоваться вместо этого.
+    links:
+      - title: Управление email адресами
+        href: /scp/emails.php
+
+default_alert_email:
+    title: Адрес email для оповещений по умолчанию
+    content: >
+        Укажите адрес электронной почты от которого будут отправляться <span class="doc-desc-title">Оповещения и
+        уведомления</span> сотрудникам.
+    links:
+      - title: Управление email адресами
+        href: /scp/emails.php
+
+admins_email_address:
+    title: Адрес email администратора
+    content: >
+        Укажите адрес электронной почты администратора на который будут высылаться <span
+        class="doc-desc-title">Системные ошибки</span> и <span
+        class="doc-desc-title">Уведомления о новых заявках</span> (если включено).
+    links:
+      - title: Управление Оповещениями и уведомлениями
+        href: /scp/settings.php?t=alerts
+
+email_fetching:
+    title: Сбор электронной почты
+    content: >
+        Разрешить сбор почты по IMAP/POP для настроенных и включенных <span class="doc-desc-title">Почтовых ящиков</span>.
+    links:
+      - title: Управление почтовыми ящиками
+        href: /scp/emails.php
+
+enable_autocron_fetch:
+    title: Сбор электронной почты через Auto-cron
+    content: >
+        Включить периодический сбор электронной почты с использованием внутреннего диспетчера,
+        который активируется активностью сотрудников. <br><br> Пожалуйста, обратите внимание, что
+        почта не будет собираться системой если в панели сотрудников нет ни одного сотрудника. Крайне рекомендуется
+        использование внешнего диспетчера для получения точных данных.
+    links:
+      - title: Использование внешнего диспетчера
+        href: http://osticket.com/wiki/POP3/IMAP_Setting_Guide#Schedule_Polling
+
+strip_quoted_reply:
+    title: Вырезать цитирование ответа
+    content: >
+        Если включено, то из тела письма будет вырезаться предыдущая переписка.
+        <br><br>
+        Этот функционал серьезно зависит от параметра <span
+        class="doc-desc-title">Разделитель ответа</span> ниже.
+
+reply_separator_tag:
+    title: Разделитель ответа
+    content: >
+        Этот маркер просит пользователя отвечать выше определенной черты.
+        <br><br>
+        <strong>Замечание:</strong> это имеет значение, если включен параметр <span
+        class="doc-desc-title">Вырезать цитирование ответа</span> выше.
+
+emailed_tickets_priority:
+    title: Приоритет задается письмом
+    content: >
+        Выберите этот параметр для изменения приоритета заявки с помощью приоритета письма электронной почты
+        (например в OutLook).
+        <br><br>
+        Этот параметр может быть переопределен через <span
+        class="doc-desc-title">Фильтр заявок</span>.
+    links:
+      - title: Управление фильтром заявок
+        href: /scp/filters.php
+
+accept_all_emails:
+    title: Принимать все письма
+    content: >
+        Принимать письмо от неизвестных пользователей.
+        <br><br>
+        Отключение этого параметра приведет к отклонению писем от пользователей.
+
+accept_email_collaborators:
+    title: Принимать соавторов в письме
+    content: >
+        Соавторы будут создаваться из полей <code><strong>Кому</strong></code>
+        и <code><strong>CC</strong></code> письма электронной почты.
+        <br /><br />
+        <em>Соавторы всегда могут быть добавлены вручную сотрудниками.</em>
+
+default_mta:
+    title: MTA по умолчанию
+    content: >
+        <span class="doc-desc-title">MTA по умолчанию</span> заботится о процессе
+        доставки писем электронной почты для исходящих писем, для которых не указаны настройки SMTP.
+
+verify_email_addrs:
+    title: Проверка адресов email
+    content: >
+        Включите эту опцию для проверки адресов электронной почты на наличие записей
+        (MX) в домене DNS. Полезно для проверки корректности адресов электронной почты.

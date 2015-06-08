@@ -1,0 +1,106 @@
+#
+# This is popup help messages for the Admin Panel -> Staff -> Add Staff Form
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+username:
+    title: Имя пользователя
+    content: >
+        Пожалуйста, укажите <span class="doc-desc-title">имя пользователя</span> сотрудника,
+        которое является уникальным для <span class="doc-desc-title">Системы
+        заявок</span>.
+
+email_address:
+    title: Адрес email
+    content: >
+        Укажите адрес электронной почты сотрудника, который будет получать <span
+        class="doc-desc-title">Оповещения и уведомления</span> из <span
+        class="doc-desc-title">Системы заявок</span>.
+        <br><br>
+        Сотрудники могут заходить в панель управления с использованием имени пользователя или адреса email.
+
+welcome_email:
+    title: Приветственное письмо
+    content: >
+        Отправлять новым сотрудникам ссылку доступа, по которой они смогут самостоятельно установить пароль.
+        Если не отмечено, то необходимо устанавливать и передавать эту информацию самостоятельно.
+
+account_password:
+    title: Пароль учетной записи
+    content: >
+        Как <span class="doc-desc-title">администратор</span>, вы можете
+        изменить пароль сотрудника.
+
+forced_password_change:
+    title: Принудительная смена пароля
+    content: >
+        Включите этот параметр для принуждения сотрудников к изменению пароля
+        при следующем входе в систему.
+
+agents_signature:
+    title: Подпись сотрудника
+    content: >
+        Создание подписи для сотрудника, которая будет отображаться при ответе на заявку.
+
+account_status:
+    title: Состояние учетной записи
+    content: >
+        Если статус сотрудника <span
+        class="doc-desc-opt">Заблокирован</span>, то он не сможет войти
+        в систему заявок.
+
+assigned_group:
+    title: Назначенная группа
+    content: >
+        <span class="doc-desc-title">Группа</span> сотрудника определяет
+        уровень доступа в <span class="doc-desc-title">Системе заявок</span>.
+    links:
+      - title: Управление группами
+        href: /scp/groups.php
+
+primary_department:
+    title: Основной отдел
+    content: >
+        Выберите основной <span class="doc-desc-title">отдел</span>, которому принадлежит этот сотрудник.
+
+    links:
+      - title: Управление отделами
+        href: /scp/departments.php
+
+daylight_saving:
+    title: Летнее время
+    content: >
+        Включите этот параметр для применения летнего времени к часовому поясу учетной записи этого сотрудника.
+
+limited_access:
+    title: Ограниченный доступ
+    content: >
+        Если включено, то сотрудник будет иметь доступ только к тем заявкам, которые назначены ему явно или через команду.
+
+directory_listing:
+    title: Просмотр сотрудников
+    content: >
+        Включите этот параметр для включения возможности просмотра <span
+        class="doc-desc-title">Списка сотрудников</span>.
+    links:
+      - title: Список сотрудников
+        href: /scp/directory.php
+
+vacation_mode:
+    title: Режим отпуска
+    content: >
+        Если вы поменяете состояние сотрудника на <span
+        class="doc-desc-opt">Режим отпуска</span>, то сотрудник не только не будет
+        получать <span class="doc-desc-title">Оповещения и уведомления</span>, но и
+        не будет доступен для назначения заявок.
+

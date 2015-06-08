@@ -1,0 +1,121 @@
+#
+# This is popup help messages for the Admin Panel -> Manage -> Help Topic
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+help_topic_information:
+    title: Информация раздела помощи
+    content: >
+        <span class="doc-desc-title">Разделы помощи</span> определяют метод
+        сбора информации от пользователей, обработку и назначение заявок.
+topic:
+    title: Название раздела
+    content: >
+        Уникальное название раздела помощи.
+
+status:
+    title: Состояние
+    content: >
+        Если отключено, то этот <span class="doc-desc-title">Раздел помощи</span>
+        будет не доступен.
+
+type:
+    title: Тип
+    content: >
+        Если <span class="doc-desc-title">Раздел помощи</span> отмечен как
+        Закрытый, то он будет доступен только сотрудникам при создании заявок
+        через панель управления сотрудника.
+
+parent_topic:
+    title: Родительский раздел
+    content: >
+        Выберите родительский раздел, которому будет принадлежать этот <span
+        class="doc-desc-title">Раздел помощи</span>. Если выбран родительский раздел, то
+        этот <span class="doc-desc-title">Раздел помощи</span> будет отображаться в списке
+        за родительским.
+
+custom_form:
+    title: Пользовательская форма
+    content: >
+        Пользовательские формы позволяют получить дополнительную информацию от пользователей,
+        которая имеет отношение к этому <span class="doc-desc-title">Разделу
+        помощи</span>.
+    links:
+      - title: Управление пользовательскими формами
+        href: /scp/forms.php
+
+priority:
+    title: Приоритет
+    content: >
+        Укажите приоритет, который будет назначаться новый заявкам в этом <span
+        class="doc-desc-title">Разделе помощи</span>.
+        <br><br>
+        Фильтр заявок может переопределить этот параметр.
+
+department:
+    title: Отдел
+    content: >
+        Укажите отдел, которому будут назначаться новые заявки из этого Раздела помощи.
+    links:
+      - title: Управление отделами
+        href: /scp/departments.php
+sla_plan:
+    title: План SLA
+    content: >
+        Укажите план SLA, которые соответствует этому <span class="doc-desc-title">Разделу помощи</span>.
+        <br><br>
+        Этот параметр переопределит SLA отдела
+    links:
+      - title: Управление планами SLA
+        href: /scp/slas.php
+
+thank_you_page:
+    title: Страница благодарности
+    content: >
+        Укажите страницу благодарности, которая будет отображаться пользователю после
+        создания заявки в этом <span class="doc-desc-title">Разделе помощи</span>.
+    links:
+      - title: Управление страницами благодарности
+        href: /scp/pages.php
+
+auto_assign_to:
+    title: Автоматическое название новых заявок
+    content: >
+        Необязательный параметр, который позволяет задать сотрудника или команду для новых заявок,
+        которые относятся к этому <span class="doc-desc-title">Разделу помощи</span>
+        <br><br>
+        Фильтр заявок может переопределить этот параметр.
+    links:
+      - title: Управление сотрудниками и командами
+        href: /scp/staff.php
+
+ticket_auto_response:
+    title: Автоматический ответ на заявку
+    content: >
+        Включение этого параметра отключит автоматический ответ на новые заявки из
+        этого <span class="doc-desc-title">Раздела помощи</span>.
+        <br><br>
+        Этот параметр переопределяет настройки автоответчика для
+        <span
+        class="doc-desc-title">Отдела</span>, а также для общие <span
+        class="doc-desc-title">Настройки автоответчика</span>.
+    links:
+      - title: Настройки автоответчика
+        href: /scp/settings.php?t=autoresp
+
+custom_numbers:
+    title: Пользовательский числовой формат заявок
+    content: >
+        Укажите "Пользовательский" для переопределения системного формата номеров для заявок
+        из этого раздела помощи. Посмотрите подсказку на странице Настройки / Заявки для
+        получения подробной информации.

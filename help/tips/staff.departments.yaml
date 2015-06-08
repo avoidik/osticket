@@ -1,0 +1,26 @@
+#
+# This is popup help messages for the Admin Panel -> Staff -> Departments
+#
+# Fields:
+# title - Shown in bold at the top of the popover window
+# content - The body of the help popover
+# links - List of links shows below the content
+#   title - Link title
+#   href - href of link (links starting with / are translated to the
+#       helpdesk installation path)
+#
+# The key names such as 'helpdesk_name' should not be translated as they
+# must match the HTML #ids put into the page template.
+#
+---
+type:
+    title: Тип
+    content: >
+        Если тип отдела Закрытый, то подпись отдела не будет доступна как для ответов, так и для отображения назначений
+        в клиентской части портала.
+
+dept_manager:
+    title: Руководитель отдела
+    content: >
+        Вы можете выбрать сотрудника в качестве руководителя отдела, с целью получения Оповещений и уведомлений для заявок отдела. 
+        Сотрудник не обязательно должен быть членом отдела для управления отделом
