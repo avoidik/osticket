@@ -15,6 +15,6 @@
 ---
 - id: 1
   isactive: 1
-  name: Шаблон osTicket по умолчанию (HTML)
+  name: Шаблон osTicket по умолчанию
   notes: |
     Стандартные шаблоны osTicket

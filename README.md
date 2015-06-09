@@ -9,7 +9,7 @@ for bad translation. That is why i've created this translation from scratch.
 
 Before creating phar we must convert our translation (serialize gettext to php)
 ```
-php include/class.translation.php message.mo > message.mo.php
+php include/class.translation.php messages.mo > messages.mo.php
 ```
 
 Then we can use php-script to create standalone phar
