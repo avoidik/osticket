@@ -3,7 +3,7 @@
 ### What is it
 
 I've tired of poor quality translation for russian osTicket and permanent race condition
-for bad translation. That is my i've created this translation from scratch.
+for bad translation. That is why i've created this translation from scratch.
 
 ### Don't forget
 
