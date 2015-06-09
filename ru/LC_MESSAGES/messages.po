@@ -8,7 +8,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.1\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"PO-Revision-Date: 2015-06-09 14:40+0300\n"
+"PO-Revision-Date: 2015-06-09 15:17+0300\n"
 "POT-Creation-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -5255,7 +5255,7 @@ msgstr "Удалить все данные, указанные для <u> %s </u
 #: include/staff/dynamic-forms.inc.php:2
 #: include/staff/dynamic-forms.inc.php:53
 msgid "Custom Forms"
-msgstr "Произвольные поля"
+msgstr "Пользовательские поля"
 
 #: include/staff/dynamic-forms.inc.php:6
 msgid "Add New Custom Form"
@@ -5281,9 +5281,9 @@ msgstr "Дополнительные формы пока не определен
 #: scp/forms.php:98
 msgid "selected custom form"
 msgid_plural "selected custom forms"
-msgstr[0] "выбранная произвольная форма"
-msgstr[1] "выбранные произвольные формы"
-msgstr[2] "выбранных произвольных форм"
+msgstr[0] "выбранная пользовательская форма"
+msgstr[1] "выбранные пользовательские формы"
+msgstr[2] "выбранных пользовательских форм"
 
 #: include/staff/dynamic-list.inc.php:5
 msgid "Update custom list"
