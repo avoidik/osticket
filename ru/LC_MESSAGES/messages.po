@@ -8,7 +8,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.1\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"PO-Revision-Date: 2015-06-09 15:51+0300\n"
+"PO-Revision-Date: 2015-06-09 16:24+0300\n"
 "POT-Creation-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -653,7 +653,7 @@ msgstr "Критерию поиска соответствует %s"
 #, php-format
 msgid "%d ticket"
 msgid_plural "%d tickets"
-msgstr[0] "%d заявка"
+msgstr[0] "%d заявку"
 msgstr[1] "%d заявки"
 msgstr[2] "%d заявок"
 
@@ -814,8 +814,8 @@ msgstr "Не удается изменить состояние для %s"
 #: include/ajax.tickets.php:913
 msgid "the selected ticket"
 msgid_plural "any of the selected tickets"
-msgstr[0] "выбранной заявки"
-msgstr[1] "выбранных заявок"
+msgstr[0] "выбранную заявку"
+msgstr[1] "выбранные заявки"
 msgstr[2] "выбранных заявок"
 
 #: include/ajax.tickets.php:919 include/ajax.tickets.php:936
@@ -828,8 +828,8 @@ msgstr "Успешно удалено %s."
 #: include/ajax.tickets.php:981
 msgid "selected ticket"
 msgid_plural "selected tickets"
-msgstr[0] "выбранная заявка"
-msgstr[1] "выбранных заявки"
+msgstr[0] "выбранную заявку"
+msgstr[1] "выбранные заявки"
 msgstr[2] "выбранных заявок"
 
 #. 1$ will be 'selected ticket(s)', 2$ is the new status
@@ -1210,7 +1210,7 @@ msgstr "Время ожидания"
 #, php-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] "%d минута"
+msgstr[0] "%d минуту"
 msgstr[1] "%d минуты"
 msgstr[2] "%d минут"
 
@@ -2720,7 +2720,7 @@ msgstr "Новая заявка"
 
 #: include/class.nav.php:155
 msgid "Agent Directory"
-msgstr "Каталог сотрудника"
+msgstr "Каталог сотрудников"
 
 #: include/class.nav.php:156
 msgid "My Profile"
@@ -3018,7 +3018,7 @@ msgstr "%1$d - %2$d из %3$d"
 #: include/class.pdf.php:100
 #, php-format
 msgid "Ticket #%1$s printed by %2$s on %3$s"
-msgstr "Заявка #%1$s распечатана %2$s на %3$s"
+msgstr "Заявка #%1$s распечатана %2$s, %3$s"
 
 #: include/class.pdf.php:103
 #, php-format
@@ -4735,7 +4735,7 @@ msgstr "Заблокированные адреса не найдены!"
 #: scp/banlist.php:119
 msgid "selected ban rule"
 msgid_plural "selected ban rules"
-msgstr[0] "выбранные правило блокировки"
+msgstr[0] "выбранное правило блокировки"
 msgstr[1] "выбранных правила блокировки"
 msgstr[2] "выбранных правил блокировки"
 
@@ -4934,7 +4934,7 @@ msgstr "Вы действительно хотите изменить %s на т
 msgid "selected category"
 msgid_plural "selected categories"
 msgstr[0] "выбранную категорию"
-msgstr[1] "выбранных категории"
+msgstr[1] "выбранные категории"
 msgstr[2] "выбранных категорий"
 
 #: include/staff/categories.inc.php:129 include/staff/departments.inc.php:148
@@ -5264,7 +5264,7 @@ msgstr "Добавить новую пользовательскую форму"
 #: include/staff/dynamic-forms.inc.php:14
 msgid "form"
 msgid_plural "forms"
-msgstr[0] "форма"
+msgstr[0] "форму"
 msgstr[1] "формы"
 msgstr[2] "форм"
 
@@ -5281,7 +5281,7 @@ msgstr "Дополнительные формы пока не определен
 #: scp/forms.php:98
 msgid "selected custom form"
 msgid_plural "selected custom forms"
-msgstr[0] "выбранная пользовательская форма"
+msgstr[0] "выбранную пользовательскую форму"
 msgstr[1] "выбранные пользовательские формы"
 msgstr[2] "выбранных пользовательских форм"
 
@@ -5386,7 +5386,7 @@ msgid "selected custom list"
 msgid_plural "selected custom lists"
 msgstr[0] "выбранный пользовательский список"
 msgstr[1] "выбранных пользовательских списка"
-msgstr[2] "выбранных пользовательский списоков"
+msgstr[2] "выбранных пользовательских списоков"
 
 #: include/staff/email.inc.php:5
 msgid "Update Email"
@@ -5955,7 +5955,7 @@ msgstr "Дата создания"
 #: scp/groups.php:91 scp/groups.php:94 scp/groups.php:97
 msgid "selected group"
 msgid_plural "selected groups"
-msgstr[0] "выбранная группа"
+msgstr[0] "выбранную группу"
 msgstr[1] "выбранных группы"
 msgstr[2] "выбранных групп"
 
@@ -6237,7 +6237,7 @@ msgstr "<b>Тело страницы</b>: Переменные из заявки
 #: include/staff/pages.inc.php:46 scp/pages.php:21 scp/pages.php:41
 msgid "site page"
 msgid_plural "site pages"
-msgstr[0] "страница сайта"
+msgstr[0] "страницу сайта"
 msgstr[1] "страницы сайта"
 msgstr[2] "страниц сайта"
 
@@ -6255,7 +6255,7 @@ msgstr "(используется)"
 #: scp/pages.php:96 scp/pages.php:107 scp/pages.php:110 scp/pages.php:113
 msgid "selected site page"
 msgid_plural "selected site pages"
-msgstr[0] "выбранная страница"
+msgstr[0] "выбранную страницу"
 msgstr[1] "выбранных страницы"
 msgstr[2] "выбранных страниц"
 
@@ -6514,12 +6514,12 @@ msgstr "Чрезмерные попытки входа сотрудника"
 #: include/staff/settings-access.inc.php:63
 #: include/staff/settings-access.inc.php:124
 msgid "failed login attempt(s) allowed before a lock-out is enforced"
-msgstr "разрешенных попыток входа до включения блокировки"
+msgstr "- число разрешенных попыток входа до включения блокировки"
 
 #: include/staff/settings-access.inc.php:71
 #: include/staff/settings-access.inc.php:132
 msgid "minutes locked out"
-msgstr "минут блокировки"
+msgstr "- количество минут блокировки"
 
 #: include/staff/settings-access.inc.php:74
 msgid "Agent Session Timeout"
@@ -7218,7 +7218,7 @@ msgid "selected SLA plan"
 msgid_plural "selected SLA plans"
 msgstr[0] "выбранный план SLA"
 msgstr[1] "выбранных плана SLA"
-msgstr[2] "выбранных плана SLA"
+msgstr[2] "выбранных планов SLA"
 
 #: include/staff/staff.inc.php:7
 msgid "Update Agent"
@@ -7380,8 +7380,8 @@ msgstr "Применить"
 #: scp/staff.php:26
 msgid "agent"
 msgid_plural "agents"
-msgstr[0] "сотрудник"
-msgstr[1] "сотрудника"
+msgstr[0] "сотрудника"
+msgstr[1] "сотрудников"
 msgstr[2] "сотрудников"
 
 #: include/staff/staffmembers.inc.php:142
@@ -7413,7 +7413,7 @@ msgstr "Вы действительно хотите <b>включить </b> (�
 #, php-format
 msgid "selected agent"
 msgid_plural "selected agents"
-msgstr[0] "выбранный сотрудник"
+msgstr[0] "выбранного сотрудника"
 msgstr[1] "выбранных сотрудника"
 msgstr[2] "выбранных сотрудников"
 
@@ -7490,7 +7490,7 @@ msgstr "Удалить выбранные записи"
 #: scp/logs.php:39
 msgid "selected log entry"
 msgid_plural "selected log entries"
-msgstr[0] "выбранная запись журнала"
+msgstr[0] "выбранную запись журнала"
 msgstr[1] "выбранные записи журнала"
 msgstr[2] "выбранных записей журнала"
 
@@ -7650,7 +7650,7 @@ msgstr "Название команды"
 #: scp/teams.php:89 scp/teams.php:92 scp/teams.php:95
 msgid "selected team"
 msgid_plural "selected teams"
-msgstr[0] "выбранная команда"
+msgstr[0] "выбранную команду"
 msgstr[1] "выбранных команды"
 msgstr[2] "выбранных команд"
 
@@ -8748,7 +8748,7 @@ msgstr "Вы действительно хотите <b>УДАЛИТЬ</b> %1$s 
 #: include/staff/templates/users.tmpl.php:164
 msgid "selected user"
 msgid_plural "selected users"
-msgstr[0] "выбранный пользователь"
+msgstr[0] "выбранного пользователя"
 msgstr[1] "выбранных пользователя"
 msgstr[2] "выбранных пользователей"
 
@@ -9387,7 +9387,7 @@ msgstr "Не удается сделать %s ЗАКРЫТЫМ"
 
 #: scp/dashboard.php:33
 msgid "Ticket Activity"
-msgstr "Активность заявки"
+msgstr "Активность заявок"
 
 #: scp/dashboard.php:35
 msgid "Select the starting time and period for the system activity graph"
@@ -9431,7 +9431,7 @@ msgstr "Статистика"
 
 #: scp/dashboard.php:64
 msgid "Statistics of tickets organized by department, help topic, and agent."
-msgstr "Статистика по заявкам сортируемая по отделам, категориям и сотрудникам."
+msgstr "Статистика по заявкам сортируемая по отделам, разделам и сотрудникам."
 
 #: scp/departments.php:20 scp/departments.php:26
 msgid "department"
@@ -9586,7 +9586,7 @@ msgid "selected ticket filter"
 msgid_plural "selected ticket filters"
 msgstr[0] "выбранный фильтр заявок"
 msgstr[1] "выбранных фильтра заявок"
-msgstr[2] "выбранных фильтра заявок"
+msgstr[2] "выбранных фильтров заявок"
 
 #: scp/filters.php:97
 #, php-format
@@ -9739,7 +9739,7 @@ msgstr "Успешно удалено %s"
 #: scp/orgs.php:52 scp/orgs.php:55 scp/orgs.php:58
 msgid "selected end user"
 msgid_plural "selected end users"
-msgstr[0] "выбранный пользователь"
+msgstr[0] "выбранного пользователя"
 msgstr[1] "выбранных пользователя"
 msgstr[2] "выбранных пользователей"
 
