@@ -8,10 +8,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.1\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"PO-Revision-Date: 2015-06-08 16:28+0300\n"
+"PO-Revision-Date: 2015-06-09 13:33+0300\n"
 "POT-Creation-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"X-Poedit-Basepath: ..\\..\\..\\..\\\n"
+"X-Poedit-KeywordsList: __;_N:1,2;_S;_NS:1,2;_L;_NL:1,2;_P:1c,2;_NP:1c,2,3\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #: account.php:62 include/class.ticket.php:2640
 msgid "Incomplete client information"
@@ -10894,7 +10898,7 @@ msgstr "Вы пытаетесь загрузить слишком много ф�
 
 #: js/filedrop.field.js:257
 msgid "File is too large"
-msgstr "Файл слишком велик"
+msgstr "Файл имеет слишком большой размер"
 
 #: js/filedrop.field.js:258 js/filedrop.field.js:259
 msgid "This type of file is not allowed"
@@ -10906,7 +10910,7 @@ msgstr "Не удается найти или прочитать этот фай
 
 #: js/osticket.js:30 scp/js/scp.js:147 scp/js/scp.js:150
 msgid "Are you sure you want to leave? Any changes or info you've entered will be discarded!"
-msgstr "Вы действительно хотите уйти? Все изменения или информация, которую вы ввели будет утеряна!"
+msgstr "Вы действительно хотите уйти? Все введенные данные будут утеряны!"
 
 #: js/osticket.js:137 scp/js/ticket.js:426
 msgid "Show Images"
@@ -10962,7 +10966,7 @@ msgstr "Вы можете выбрать только {0}.\n"
 
 #: scp/js/scp.js:17
 msgid "You have made {0} selections.\n"
-msgstr "Вы выбрали {0}. \n"
+msgstr "Вы выбрали {0}.\n"
 
 #: scp/js/scp.js:18
 msgid "Please remove {0} selection(s)."
@@ -10990,7 +10994,7 @@ msgstr "Создать"
 
 #: scp/js/ticket.js:69 scp/js/ticket.js:72 scp/js/ticket.js:248
 msgid "Any changes or info you've entered will be discarded!"
-msgstr "Все изменения и введенная информация будет утеряна!"
+msgstr "Все введенные данные будут утеряны!"
 
 #: scp/js/ticket.js:140
 msgid "Unable to acquire a lock on the ticket. Someone else could be working on the same ticket.  Please confirm if you wish to continue anyways."
@@ -11014,7 +11018,7 @@ msgstr "Произошла ошибка. Прерываем..."
 
 #: scp/js/upgrader.js:57
 msgid "Manual upgrade required (ajax failed)"
-msgstr "Требуется ручная установка (сбой ajax)"
+msgstr "Требуется обновление вручную (сбой ajax)"
 
 #: scp/js/upgrader.js:61
 msgid "Something went wrong"
