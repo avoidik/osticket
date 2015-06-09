@@ -8,7 +8,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.1\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"PO-Revision-Date: 2015-06-09 15:17+0300\n"
+"PO-Revision-Date: 2015-06-09 15:42+0300\n"
 "POT-Creation-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -595,7 +595,7 @@ msgstr "Поиск организации"
 
 #: include/ajax.reports.php:31
 msgid "Topics"
-msgstr "Предметы"
+msgstr "Разделы"
 
 #: include/ajax.reports.php:34 include/ajax.reports.php:66
 #: include/staff/staff.inc.php:216
@@ -614,27 +614,27 @@ msgstr "Разделы помощи"
 
 #: include/ajax.reports.php:146
 msgid "Opened"
-msgstr "Открыта"
+msgstr "Открытая"
 
 #: include/ajax.reports.php:146
 msgid "Assigned"
-msgstr "Назначена"
+msgstr "Назначенная"
 
 #: include/ajax.reports.php:146 include/class.export.php:76
 #: include/staff/tickets.inc.php:597
 #: include/staff/templates/ticket-preview.tmpl.php:51 scp/tickets.php:426
 msgid "Overdue"
-msgstr "Просрочена"
+msgstr "Просроченная"
 
 #: include/ajax.reports.php:146 include/client/tickets.inc.php:132
 #: include/staff/templates/ticket-preview.tmpl.php:69 scp/tickets.php:444
 #, php-format
 msgid "Closed"
-msgstr "Закрыта"
+msgstr "Закрытая"
 
 #: include/ajax.reports.php:146
 msgid "Reopened"
-msgstr "Переоткрыта"
+msgstr "Переоткрытая"
 
 #: include/ajax.reports.php:147
 msgid "Service Time"
@@ -2716,7 +2716,7 @@ msgstr "Мои&nbsp;заявки"
 #: include/staff/settings-autoresp.inc.php:17
 #: include/staff/ticket-open.inc.php:36 scp/tickets.php:452
 msgid "New Ticket"
-msgstr "Следующая заявка"
+msgstr "Новая заявка"
 
 #: include/class.nav.php:155
 msgid "Agent Directory"
@@ -7306,7 +7306,7 @@ msgstr "Состояние учетной записи"
 
 #: include/staff/staff.inc.php:226 include/staff/staffmembers.inc.php:163
 msgid "Locked"
-msgstr "Заблокирована"
+msgstr "Заблокировано"
 
 #: include/staff/staff.inc.php:232
 msgid "Assigned Group"
